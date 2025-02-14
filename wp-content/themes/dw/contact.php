@@ -10,9 +10,9 @@
         <h2><?= get_the_title(); ?></h2>
 
         <ul>
-            <li>LinkedIn</li>
-            <li>Github</li>
-            <li>Email</li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Email</a></li>
         </ul>
         <div><?= get_the_content(); ?></div>
 
