@@ -12,6 +12,24 @@
          width: 320px;
          padding: 20px;
          background: #f1f1f1;
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     .recipe_fig{
+         display: block;
+         position: relative;
+         width: 100%;
+         height: 0;
+         padding-top: 100%;
+     }
+     .recipe_img{
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
      }
 </style>
 <main>
@@ -24,11 +42,17 @@
     if(have_posts()):while(have_posts()):the_post();?>
 
         <h2><?= get_the_title(); ?></h2>
+        <p><?= get_the_excerpt(); ?></p>
 
             <div class="recipe">
                     <aside class="recipe_ingredients">
-                        <h3>Ingrédients</h3>
-                        <p>À compléter</p>
+                        <div>
+                            <h3>Ingrédients</h3>
+                            <p>À compléter</p>
+                        </div>
+                        <figure class="recipe_fig">
+                            <?= get_the_post_thumbnail(size:'large', attr: ['class' => 'recipe_img']); ?>
+                        </figure>
                     </aside>
 
                 <section>
