@@ -20,5 +20,5 @@
     endwhile; else:?>
         <p>La page est vide</p>
     <?php endif; ?>
-
+</main>
     <?php get_footer(); ?>
