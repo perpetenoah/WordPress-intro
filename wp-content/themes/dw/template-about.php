@@ -1,11 +1,10 @@
-<?php
+<?php /* Template name: Page "À propos" */?>
 
-?>
 <?php get_header(); ?>
 <main>
 
     <aside>
-        <h2>Bienvenue sur mon site&nbsp;!</h2>
+        <h2>À propos de moi</h2>
     </aside>
     <?php
     // On ouvre "la boucle" (The loop), la structure de contrôle propre à Wordpress:
